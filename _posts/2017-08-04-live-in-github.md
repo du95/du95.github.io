@@ -1,9 +1,10 @@
 ---
+layout: post
 title: 第一夜，住进github
-description: 这是搭建github个人博客后的第一篇文章，记录这“历史性”的一篇章
-categories:
- - 心情
-tags:
+date: 2017-08-04 
+categories: 心情
+tags: emotion 
+excerpt: 初入github“江湖”，这是搭建github个人博客后的第一篇文章，记录这“历史性”的一篇章
 ---
 
 > Welcome to you !

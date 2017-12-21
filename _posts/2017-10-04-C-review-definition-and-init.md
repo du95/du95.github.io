@@ -1,10 +1,10 @@
 ---
 layout: post           
 title: C语言复习笔记一   
-subtitle: 中秋节快乐！关于声明和初始化的一些易错点记录
-image: /img/xuexi.jpeg
-bigimg: /img/path.jpg
-tags: [c,c++]  
+date: 2017-10-04
+catrgories: C/C++
+tags: [c,c++]
+excerpt: 中秋节快乐！关于声明和初始化的一些易错点记录
 ---
 ### 声明和初始化过程：   
 #### 1、连续声明：  

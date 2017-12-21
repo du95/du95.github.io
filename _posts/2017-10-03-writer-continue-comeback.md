@@ -1,10 +1,10 @@
 ---
 layout: post           
 title: 回归写文字  
-subtitle: 继续矫情、继续吐槽身边的低等人类!
-image: /img/gun.jpg    
-bigimg: /img/tucao.jpeg
-tags: [emotion]
+date: 2017-10-03
+categories: 心情
+tags: [emotion，心情]
+excerpt: 继续矫情、继续吐槽身边的低等人类!
 --- 
 ### 写作回归
 >时隔一年半载，我又开始写字了，之前没有坚持下来，回头看来失去了太多了，没有文字的生活变得浮躁，生活目标都渐渐的不清晰了。不过，整天逼逼叨的我又回来了  

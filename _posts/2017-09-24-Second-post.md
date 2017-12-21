@@ -1,10 +1,11 @@
 ---
 layout: post           
 title: Second post!   
-subtitle: It's a post！ye
+date: 2017-09-24
 image: /img/hello_world.jpeg    
 bigimg: /img/path.jpg     
 tags: [random, exciting-stuff]
+excerpt: 二更github主页
 ---  
 
 ## 把github装修了一下  

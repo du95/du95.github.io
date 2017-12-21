@@ -1,9 +1,10 @@
 ---
 layout: post           
 title: 完美黑苹果!   
-subtitle: 神舟笔记本改装成了黑苹果，用起来很舒服，开始喜欢苹果了，无论是Mac还是iPhone，强大又美丽！     
-image: /img/apple.png  
-    
+date: 2017-10-09
+categories: 搞机
+tags: 搞机
+excerpt: 神舟笔记本改装成了黑苹果，用起来很舒服，开始喜欢苹果了，无论是Mac还是iPhone，强大又美丽！     
 ---  
 
 ## <center>看我的黑苹果<center>
