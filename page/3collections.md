@@ -9,6 +9,7 @@ type: page
 * content
 {:toc}
 
+此乃博客前端创作大牛分享的工具页面，本人不做修改
 ## 工具
 
 * [box-shadow generator](http://www.cssmatic.com/box-shadow)
