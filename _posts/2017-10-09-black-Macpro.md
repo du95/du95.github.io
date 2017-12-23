@@ -8,7 +8,7 @@ excerpt: 神舟笔记本改装成了黑苹果，用起来很舒服，开始喜�
 ---  
 
 ## <center>看我的黑苹果<center>
-![Mac-desktop](/img/Mac-desktop.png)  
+![Mac-desktop](./img/Mac-desktop.png)  
 
 ---  
 
