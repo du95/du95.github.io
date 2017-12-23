@@ -9,9 +9,7 @@ excerpt: 神舟笔记本改装成了黑苹果，用起来很舒服，开始喜�
 
 ## <center>看我的黑苹果<center>
 ![Mac-desktop]({{site.url}}/img/Mac-desktop.png)  
-<figure>
-<a><img src="{{site.url}}/img/Mac-desktop.png"></a>
-</figure>
+
 ---  
 
 >是不是超级棒！    
@@ -30,7 +28,7 @@ excerpt: 神舟笔记本改装成了黑苹果，用起来很舒服，开始喜�
 编程利器  
 结合了强大的zshell，指令变得超级容易  
 
-![Mac-terminal](img/terminal.png)  
+![Mac-terminal]({{site.url}}/img/terminal.png)  
 
 
 ### 趋之若鹜的苹果Dock  
@@ -38,13 +36,13 @@ Linux下有专门的模仿软件docky
 操作极简  
 简约漂亮  
 
-![Mac-dock](img/dock.png)
+![Mac-dock]({{site.url}}/img/dock.png)
 
 
 ### 资源管理器finder  
 有了finder以后，资源管理不费劲  
 
-![Mac-finder](img/finder.png)  
+![Mac-finder](/img/finder.png)  
 
 
 ### <center>大爱Mac<center>  
