@@ -9,7 +9,10 @@ excerpt: 神舟笔记本改装成了黑苹果，用起来很舒服，开始喜�
 
 ## <center>看我的黑苹果<center>
 ![Mac-desktop](img/Mac-desktop.png)  
-
+{{ "/img/Mac-desktop.png" | prepend: site.baseurl }}  
+<figure>
+<a><img src="{{site.url}}/img/Mac-desktop.png"></a>
+</figure>
 ---  
 
 >是不是超级棒！    
