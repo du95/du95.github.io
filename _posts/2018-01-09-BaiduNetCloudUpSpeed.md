@@ -19,7 +19,8 @@ G，玩呢？微云也是慢的出奇，但是百度目前还可以通过获取p
 三：进入到自己的分享链接 四：按F12进入开发者模式，找到Console
 
 五：在这里复制粘贴这代码到这里，按回车键 控制台输入以下代码：  
-``` $.ajax({
+````
+$.ajax({
 type: "POST",
 url: "/api/sharedownload?sign="+yunData.SIGN+"&timestamp="+yunData.TIMESTAMP,
 data: "encrypt=0&product=share&uk="+yunData.SHARE_UK+"&primaryid="+yunData.SHARE_ID+"&fid_list=%5B"+yunData.FS_ID+"%5D",
@@ -28,6 +29,6 @@ success: function(d){
 window.location.href = d.list[0].dlink;
 }
 });
-```  
+````  
 六：按了回车键之后，就会弹出下载链接了。此时一般都会弹出浏览器的自带下载，如果浏览器安装了下载插件比如IDM或者是其他国产浏览器里面的自建下载器的话，都可以产生比较好的下载效果。
 >此文章截至2018-01-09仍然有效，段时间内百度应该不会改变这个地址解析的下载方式，方法是从网上找到的，在此分享
