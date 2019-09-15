@@ -9,15 +9,15 @@
 title: Qshi
 brief-intro: Ops&Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://du95.github.io" # the base hostname & protocol for your site
+url: "https://qiushido.github.io" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 
 # other links
 twitter_username: qius84151761
-facebook_username: 15172388223
-github_username:  du95
-email: 908610627@qq.com
+facebook_username: 
+github_username:  qiushido
+email: qiushido@gmail.com
 weibo_username: Rebegin程序员
 zhihu_username: 
 linkedIn_username: 
