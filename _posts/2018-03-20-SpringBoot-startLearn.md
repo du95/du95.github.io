@@ -34,6 +34,8 @@ excerpt: SrpingBoot初学，快速入门教程，简单的用户注册登录web�
 - DAO(DataAccessObject数据访问对象)数据持久化层  
 	- 用@Mapper注解的一层，访问数据库的接口层，通过dao层访问数据库，将访问返回的数据放入数据Model中，实现从sql到服务的调用。Model和DA0同属于数据处理层，Mybatis持久层框架，简化了数据操作，尽量的避免了JDBC的代码和很多的参数设置，每个MyBatis应用程序主要都是使用SqlSessionFactory实例的，一个SqlSessionFactory实例可以通过SqlSessionFactoryBuilder获得。SqlSessionFactoryBuilder可以从一个xml配置文件或者一个预定义的配置类的实例获得。通过在接口方法上使用sql注解的方式，已经可以省去xml映射文件，和SqlSessionFactory的构建过程。  
 	- 如下有一个使用SqlSessionFactory的代码案例，在项目目录中新建与启动类平级别的config文件夹，其中加入configure.xml,这个配置文件中配置mapper的路径，即数据库具体操作映射。
+
+
 ```  
 // sql操作接口案例
 public interface SqlService {
@@ -53,7 +55,9 @@ public interface SqlService {
 	public static SqlSessionFactory getSession() {
 		return sqlSessionFactory;
 	}
+``` 
 
+``` 
 	//用户查询
 	public User userSelect(String userName) {
 		SqlSession session = sqlSessionFactory.openSession();
@@ -108,7 +112,9 @@ public interface SqlService {
 		}
 		
 	}
-```    
+```  
+
+
 ```  
 // configure.xml示例  
 ?xml version="1.0" encoding="UTF-8"?>
@@ -181,6 +187,7 @@ public String index(Model model,@RequestParam(value="userName",defaultValue="")S
 	}
 	return "index";
 ```  
+
 ```  
 	@Autowired
 	private IuserService userLoginService;
@@ -218,6 +225,7 @@ public String index(Model model,@RequestParam(value="userName",defaultValue="")S
 - Interceptor拦截器  
 	- 拦截器，相当于一个切面，对于一些注册登录相关的权限管理需要拦截器来过滤一些请求访问，下面时拦截器简单应用示例：拦截器分为两部分，一为拦截方法，二位拦截器配置  
 ```  
+
 //拦截器
 public class BaseInterceptor implements HandlerInterceptor {
     //Logger logger = LoggerFactory.getLogger(BaseInterceptor.class);
@@ -253,6 +261,7 @@ public class BaseInterceptor implements HandlerInterceptor {
 
     }
 ```  
+
 ```  
 //拦截器配置
 @Configuration
@@ -274,6 +283,7 @@ public class WebConfig  extends WebMvcConfigurerAdapter  {
 - resources中的application.properties  
 	- 一些配置可以在里面加如springMVC的web访问等，不局限于此，可用时添加
 ```  
+
 //mysql和thymeleaf的配置文件
 # thymeleaf 
 spring.thymeleaf.prefix=classpath:/templates/
@@ -296,6 +306,7 @@ maven自动检查此文件中的加入的依赖信息，自动拉取jar包到项
     1.application.properties文件配置  
     2.@controller控制器设置  
 - application.properties配置文件
+
 ```  
     spring.thymeleaf.prefix=classpath:/templates/（位于/src/resources/下面）
     spring.thymeleaf.suffix=.html  
@@ -304,6 +315,7 @@ maven自动检查此文件中的加入的依赖信息，自动拉取jar包到项
     spring.thymeleaf.content-type=text/html    
     spring.thymeleaf.cache=false 
 ```  
+
 ### 可能的问题  
  - Mapping for /error:  
         This application has no explicit mapping for /error, so you are seeing this  
@@ -319,6 +331,7 @@ application启动类需要和其他层至于同一目录
  	- interface接口层，配合数据库操作，提供数据库CRUD操作接口  
  	使用@Mapper注解。不使用可能会遇到如下启动错误：  
 ```
+
 Description:  
     Field userMapper in com.UnionPay.UserManageSys.Controller.UserController required a bean of type 'com.UnionPay.UserManageSys.dao.UserMapper' that could not be found.
     Action:  
@@ -331,16 +344,19 @@ Description:
  	- model：model类中的字段名需要和SQL表中字段相一致
  - configure配置方法有二：
 - application.prepties文件添加（推荐）
+
 ```  
 #Config MySQL Connect Info
 spring.datasource.url=jdbc:mysql://127.0.0.1:3306/UserDB
 spring.datasource.username=root
 spring.datasource.password=xuexi123
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
 ``` 
 - （不推荐） config.xml：放置于src/config/Configure.xml 
  	配置文件如下：
  ``` 
+
  <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
@@ -368,6 +384,7 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 ```
 #### 多参数传入方法：
 + DAO层函数方法：使用@Param()注解  
+
 ``` 
 	@Insert("insert into `user`(user_name,user_pwd,user_authority) values (#{user_name},#{user_pwd},#{user_authority})")
 	public int addUser(@Param("user_name")String user_name,@Param("user_pwd")String user_pwd,@Param("user_authority")int user_authority)
@@ -387,6 +404,6 @@ spring.datasource.driver-class-name=com.mysql.jdbc.Driver
  	- pom.xml为依赖添加文件
  - string量的比较：equals()方法和==的区别  
  - post get put 区别
- - Mapper层中，表的输入`user`与'user' 的区别！  
+ - Mapper层中，表的输入\`user\`与'user' 的区别！  
 ## 网上下载的优秀代码示例  
 链接: https://pan.baidu.com/s/1cE1NWq7NInfqFxt3BgaMEg   密码: n2r1

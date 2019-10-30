@@ -7,7 +7,7 @@
 #### 没有什么是必须的
 
 - 这有我的联系方式，欢迎和我交流指正，也好督促我不断学习   
-- E-mail：qiushi95@foxmail.com  
+- E-mail：qiushido@gmail.com  
 
 #### 个人微信公众号，我会抽风式更新  
 ![weixin](./img/wechat.jpg)
